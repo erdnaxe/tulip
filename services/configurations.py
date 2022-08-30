@@ -38,6 +38,6 @@ services = [{"ip": vm_ip, "port": 8000, "name": "saarbahn"},
 
 def containsFlag(text):
     # todo implementare logica contains
-    regex_flag = os.getenv("REACT_APP_FLAG_REGEX", r'[A-Z0-9]{31}=')
+    regex_flag = os.getenv("FLAG_REGEX", r'[A-Z0-9]{31}=')
     match = re.match(regex_flag, text)
     return match
